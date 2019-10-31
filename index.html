@@ -1,0 +1,33 @@
+<html>
+    <head>
+    </head>
+     <svg width = "1440" height = "300">
+        <rect x="0" y="0" width="1440" height="300" fill="blue"/>
+        <circle cx="120" cy="120" r="100" fill="yellow"></circle>
+        <ellipse cx="400" cy="190" rx="120" ry="40" fill="white"></ellipse>
+        <ellipse cx="490" cy="190" rx="120" ry="40" fill="white"></ellipse>
+        <ellipse cx="580" cy="190" rx="120" ry="40" fill="white"></ellipse>
+        <ellipse cx="800" cy="50" rx="120" ry="40" fill="white"></ellipse>
+        <ellipse cx="890" cy="50" rx="120" ry="40" fill="white"></ellipse>
+        <ellipse cx="970" cy="50" rx="120" ry="40" fill="white"></ellipse>
+    </svg>
+    <body>
+    <div>
+     <p>Good morning, D3 scales refers to the functions with parameters one defines. </p>
+        <pre>var scale = d3.scaleLinear()
+                .domain([100,500])
+                .range([10,350]);
+                           </pre>
+        <p>Scale can vary for many things but more importantly ther collect functions and shoots inputs, domains, to return as output, range, if we were to use scale(100) in the function, it would return 10 because for the domain 100 would return the range of 10. Scaled values can further be implimented to the scale functions and help plot scatterplots. Scatterplots can be made with .svg since one can be able to plot coordinates into each plot and give a graph-like size.</p>
+        <pre>.attr("cx", function(d){
+            return d[0];
+        }
+        .attr("cy", function(d){
+            return d[1];
+        }</pre>
+        <p>This would plot the scatter if you had an array of numbers and would essentially do all since it is a function itself.</p>
+        <h3>Visualization</h3>
+        <p>In general the plots the helped give visualization in seeing what type of data that wants to be displayed, whether if it is quantitative or not quantitative at all. For example if you were to use scaleOrdinal() it would compare two non quantitative plot such as Apples, Oranges. This would help stengthen data that could compare what each effect certain fruits have. Another help to scatterplots are scaled radii. Scaled radii helps display what data can be inferred similar to how a key can represent what type of radii here matters. Or can fully expand past that to how certain areas on the plot increases if it rises to help show the importance of data itself.</p>
+    </div>
+    </body>
+</html>
